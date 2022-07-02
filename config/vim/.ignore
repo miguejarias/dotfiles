@@ -1,0 +1,14 @@
+/node_modules
+/public
+/storage
+/vendor
+/.idea
+/.vscode
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+/.husky
+.phpunit.result.cache
+.php-cs-fixer.cache
+npm-debug.log
+yarn-error.log

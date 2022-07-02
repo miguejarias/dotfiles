@@ -1,0 +1,160 @@
+"------------------ Our Sets baybyy
+set exrc
+set relativenumber "relative line numbers
+set nu "line numbers
+set nohlsearch "removes highlight from search with enter.
+set hidden
+set noerrorbells visualbell t_vb= "no annoying bell sounds
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nowrap
+set smartcase
+set noswapfile
+set nobackup
+" set undodir=~/.vim/undodir
+" set undofile
+set incsearch
+set termguicolors
+set scrolloff=8 "scroll offset when scrolling down.
+"set signcolumn=yes "Adds a vertical guide
+"set colorcolumn=100 "Vertical guide is 100 columns wide
+set splitbelow "horizontal split always splits below
+set splitright "vertical split always split to the right
+set cmdheight=1
+set guifont=MonoLisa_Custom:h15
+set linespace=16 "line height
+set laststatus=0 ruler
+set backspace=indent,eol,start
+
+"------------------ Plugins
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'michaeldyrynda/carbon' "awesome theme
+Plug 'tpope/vim-vinegar' "improves default file browser. Press dash key
+Plug 'ctrlpvim/ctrlp.vim' "navigate with ctrl+p or cmd+p
+Plug 'tpope/vim-commentary' "comment and uncomment stuff
+Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
+
+call plug#end()
+
+" Set the color scheme.
+colorscheme carbon
+
+" Change default text, for some reason with carbon theme
+" it looks black instead of the correct color.
+hi Normal guifg=#C9CCCD
+
+" Change color of fold column to fake some
+" extra padding on the left.
+hi foldcolumn guibg=bg
+hi signcolumn guibg=bg
+
+"------------------ Remaps
+
+let mapleader = ","
+
+" Edit the vimrc file.
+nmap <leader><leader> :e ~/.config/vim/vimrc<CR>
+" Edit the gvimrc file.
+nmap <leader>g :e ~/.config/vim/gvimrc<CR>
+
+" Horizontal split
+nmap <C-H> :sp<CR>
+" Vertical split
+nmap <C-V> :vsp<CR>
+
+" Better split movements. S is shift
+"shift+j down
+nmap <S-J> <C-W><C-J>
+"shift+k up
+nmap <S-K> <C-W><C-K>
+"shift+l right
+nmap <S-L> <C-W><C-L>
+"shift+h left
+nmap <S-H> <C-W><C-H>
+
+nmap <C-p> :CtrlP<CR>
+nmap <D-p> :CtrlP<CR>
+" view tags like method names and variables in current file.
+nmap <C-r> :CtrlPBufTag<CR>
+" View most recent files like cmd+e on phpstorm
+nmap <C-e> :CtrlPMRUFiles<CR>
+
+" search entire project like cmd+shift+f in vscode
+nmap <C-f> :Ag<space>
+
+" Quick search and replace
+nmap <C-s> :Gsearch<CR>
+" select arl and do :s/query/replacement to replace
+" all instances of your query at once.
+
+" Close buffers with cmd+w instead of closing windows and tabs.
+nmap <leader>q :bd<CR>
+nmap <leader>s :w<CR>
+
+"imap <D-w> <Esc>:bd<CR>
+
+"Comment and uncomment stuff with cmd+/ on macvim
+nmap <leader>c gcc
+vmap <leader>c gc
+imap <leader>c <Esc> gcc
+
+"Keep selection when tabbing
+vnoremap < <gv
+vnoremap > >gv
+
+"Laravel mappings
+nmap <leader>lm :!php artisan make:
+nmap <leader>t :!./vendor/bin/pest<CR>
+nmap <leader>ld :!php artisan dusk<CR>
+nmap <leader>lr :e routes/web.php<CR>
+
+"Project mappings
+nmap <leader>dc :e ~/code/sites/app.docley<CR>
+nmap <leader>kw :e ~/code/sites/kwes<CR>
+
+"------------------ Auto commands
+
+" Automatically source vimrc file when we save.
+augroup autosourcing
+   autocmd!
+   autocmd BufWritePost ~/.vim/vimrc source %
+augroup END
+
+augroup cmdline
+    autocmd!
+    autocmd CmdlineLeave : echo ''
+augroup end
+
+" autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js,*.vue EslintFixAll
+" autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js,*.vue,*.css,*.json Prettier
+
+"-------------------- CtrlP Settings
+" Tells ctrlp to persist the cache in the configured location
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+
+" Use ag to search ctrlp. Its much faster.
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -U --skip-vcs-ignores -g ""'
+endif
+
+" Search ignores files inside your .ignore file. So create a .ignore file
+" in your projects in order to ignore node_modules, vendor etc.
+" I set an example .ignore file for laravel projects inside
+" of the .ignore file in this repository.
+
+" Refresh your file tree with f5
+
+"-------------------- Greplace Settings
+
+" Use ag for searching.
+set grepprg=ag
+let g:grep_cmd_opts = '--line-numbers --noheading'
+
+"-------------------- Notes
+"
+"- close all buffers with %bd and use %bd! to close without saving.

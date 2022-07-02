@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<FileZilla3 version="3.47.2.1" platform="mac">
+	<Settings>
+		<Setting name="Use Pasv mode">1</Setting>
+		<Setting name="Limit local ports">0</Setting>
+		<Setting name="Limit ports low">6000</Setting>
+		<Setting name="Limit ports high">7000</Setting>
+		<Setting name="Limit ports offset">0</Setting>
+		<Setting name="External IP mode">0</Setting>
+		<Setting name="External IP" />
+		<Setting name="External address resolver">http://ip.filezilla-project.org/ip.php</Setting>
+		<Setting name="Last resolved IP" />
+		<Setting name="No external ip on local conn">1</Setting>
+		<Setting name="Pasv reply fallback mode">0</Setting>
+		<Setting name="Timeout">20</Setting>
+		<Setting name="Logging Debug Level">0</Setting>
+		<Setting name="Logging Raw Listing">0</Setting>
+		<Setting name="fzsftp executable" />
+		<Setting name="fzstorj executable" />
+		<Setting name="Allow transfermode fallback">1</Setting>
+		<Setting name="Reconnect count">2</Setting>
+		<Setting name="Reconnect delay">5</Setting>
+		<Setting name="Enable speed limits">0</Setting>
+		<Setting name="Speedlimit inbound">1000</Setting>
+		<Setting name="Speedlimit outbound">100</Setting>
+		<Setting name="Speedlimit burst tolerance">0</Setting>
+		<Setting name="Preallocate space">0</Setting>
+		<Setting name="View hidden files">0</Setting>
+		<Setting name="Preserve timestamps">0</Setting>
+		<Setting name="Socket recv buffer size (v2)">4194304</Setting>
+		<Setting name="Socket send buffer size (v2)">262144</Setting>
+		<Setting name="FTP Keep-alive commands">0</Setting>
+		<Setting name="FTP Proxy type">0</Setting>
+		<Setting name="FTP Proxy host" />
+		<Setting name="FTP Proxy user" />
+		<Setting name="FTP Proxy password" />
+		<Setting name="FTP Proxy login sequence" />
+		<Setting name="SFTP keyfiles" />
+		<Setting name="SFTP compression">0</Setting>
+		<Setting name="Proxy type">0</Setting>
+		<Setting name="Proxy host" />
+		<Setting name="Proxy port">0</Setting>
+		<Setting name="Proxy user" />
+		<Setting name="Proxy password" />
+		<Setting name="Logging file" />
+		<Setting name="Logging filesize limit">10</Setting>
+		<Setting name="Logging show detailed logs">0</Setting>
+		<Setting name="Size format">0</Setting>
+		<Setting name="Size thousands separator">1</Setting>
+		<Setting name="Size decimal places">1</Setting>
+		<Setting name="TCP Keepalive Interval">15</Setting>
+		<Setting name="Cache TTL">600</Setting>
+		<Setting name="Number of Transfers">2</Setting>
+		<Setting name="Ascii Binary mode">0</Setting>
+		<Setting name="Auto Ascii files">am|asp|bat|c|cfm|cgi|conf|cpp|css|dhtml|diz|h|hpp|htm|html|in|inc|java|js|jsp|lua|m4|mak|md5|nfo|nsi|pas|patch|pem|php|phtml|pl|po|py|qmail|sh|sha1|sha256|sha512|shtml|sql|svg|tcl|tpl|txt|vbs|xhtml|xml|xrc</Setting>
+		<Setting name="Auto Ascii no extension">1</Setting>
+		<Setting name="Auto Ascii dotfiles">1</Setting>
+		<Setting name="Language Code" />
+		<Setting name="Concurrent download limit">0</Setting>
+		<Setting name="Concurrent upload limit">0</Setting>
+		<Setting name="Update Check">1</Setting>
+		<Setting name="Update Check Interval">7</Setting>
+		<Setting name="Last automatic update check">2022-02-16 02:37:39</Setting>
+		<Setting name="Last automatic update version">3.47.2.1</Setting>
+		<Setting name="Update Check New Version">nightly 2022-02-15 https://filezilla-project.org/nightlies/2022-02-15/x86_64-apple-darwin18.2.0/FileZilla3.app.tar.bz2 15013525 sha512 c27f24cf07a776c3df6f2f6336cb312a587e6898221d9d012ae02f0162fc46635cf7b3b855e777b3febc408292bfc34f647ab5db396dbaedd34b2a0ec94be55b sig:rbZx61uN+Pfn+ceUdc20JvP9UbInhjzHu0qMEIlSIMvttRYeTqWMyigBxrfpIjKuzKmlMMekk16TFXrD0nnWAQ
+release 3.57.0 https://dl1.cdn.filezilla-project.org/FileZilla_3.57.0_macosx-x86.app.tar.bz2 14675478 sha512 010b0342eb569ef42714a89ee6e6d2fa88e216d89e310d8e2d236e56291b5a51662168201cf5314c55f2a73a4961e9a724b2ca2fee3f7bccf821852cdf9b9997 sig:9QWgnZ0YJPdEyHX7hnHVeUOgIdek+wjvaeIQVS/Tk2xqVEE7ZmQmsz0wGQiCjuOxzNj3CQmSeixpbeIdyaPMAg
+
+3.57.0 (2021-12-10)
+
+- Fixed incorrect default settings for file editing
+- Fixed a crash looking up data in file lists
+- Fixed a crash if a HTTPS connection gets canceled during the TLS handshake
+- Updated to libfilezilla 0.35.0
+
+3.56.2 (2021-10-27)
+
+- Fixed a potential crash after uploading
+
+3.56.1 (2021-10-26)
+
+- macOS Monterey: Opening the Site Manager on startup is now delayed a millisecond, otherwise the right mouse button would have stopped working
+- macOS: Fixed getting temporary directory
+- MSW: Updated to libfilezilla 0.34.1 to fix local directory contents returned by the system in oversized buffers containing nulls
+
+3.56.0 (2021-10-11)
+
+- Updated to libfilezilla 0.34.0
+- Updated translations
+
+3.56.0-rc1 (2021-09-29)
+
++ Right-clicking a queue tab header now opens the same context menu as right-clicking the correponding queue contents
++ By default, the minimum allowed TLS version is now TLS 1.2
++ Optionally, the systen trust store can be used for certificate verification
+- FTP: Fixed an issue with key file conversion
+- Fixed an issue loading servers not supporting session resumption from storage
+
+3.55.1 (2021-08-09)
+
+- Fixed a crash if a tree view items are deleted at the same time as something is being dragged over the tree view
+- Updated to libfilezilla 0.31.1 to fix an issue with SIGPIPE on *nix
+
+3.55.0 (2021-07-09)
+
+- Updated translations
+
+3.55.0-rc1 (2021-07-02)
+
+- Updated SFTP components
+- Set appropriate ALPN on TLS connections
+- Fixed loading of settings files that were moved between platforms
+- Refactored updater internals
+
+3.54.1 (2021-05-13)
+
+- Fix control visibility logic in Site Manager
+
+3.54.0 (2021-05-12)
+
+- SFTP: Fixed a regression loading configured key files
+
+3.54.0-rc1 (2021-05-04)
+
+- Refactored network activity handling, the activity indicators tooltips now display more accurate data
+- Updated SFTP components
+- Small performance improvement sorting very large directory listings
+- Fixed a crash changing numeric permissions value in chmod dialog
+
+3.53.1 (2021-03-23)
+
+- Removed an error message on new installation where there is no sitemanager.xml yet
+- Fixed SOCKS5 proxy support
+
+3.53.0 (2021-03-15)
+
+- HTTP: Handle servers sending early replies
+
+3.53.0-rc1 (2021-03-05)
+
++ Require explicit confirmation on FTP servers not supporting TLS session esumption on the data connection
++ Access Grant support for Tardigrade
+- MSW: Fixed handle leak if using SFTP
+- FTP: Fixed cancelling listings on very slow computers with extremely fast network connection
+- Fixed loading of custom FTP proxy setting when opening the settings dialog
+- Internal restructuring
+
+3.52.2 (2021-01-18)
+
+- When restoring the main window position at startup, detect if the title bar would become hidden behind taskbars or global menu bars and reposition it appropriately
+- SFTP: Fixed preserving of timestamps on downloads
+
+3.52.0.5 (2021-01-08)
+
+- FTP: Fixed crash if downloading ASCII files with stray carriage returns
+- Fixed too strict requirements for preallocation
+- *nix: Fixed a memory leak
+
+3.52.0.4 (2021-01-07)
+
+- macOS: Work around a kernel bug where ftruncate cannot be called more than once on a shared memory object
+
+3.52.0.3 (2021-01-06)
+
+- macOS: Fix issue opening shared memory objects
+
+3.52.0.2 (2021-01-06)
+
+- HTTP: Handle multi-token Connection: headers
+
+3.52.0.1 (2021-01-05)
+
+- macOS: Rebuilt to address a toolchain issue
+
+3.52.0 (2021-01-04)
+
+- Fixed a regression with the rename file exists action on downloads
+
+3.52.0-rc1 (2020-12-29)
+
++ Added context menu item in the search dialog to close the search and set the selected directory as the current local/remote directory
+- Minor fixes for updating the HTTP transfer status
+
+3.52.0-beta1 (2020-12-17)
+
++ Use asynchronous file readers/writers in the engine
+- MSW: React to system color scheme changes
+- Fixed splitters not being draggable on newly created tabs
+- MSW: Fixed data directory lookup if run from a development environment
+
+3.51.0 (2020-10-20)
+
+- Fixed import of sites protected with a different master password
+- Directory comparison now works correctly with non-default file name sorting settings
+- Small search dialog fixes
+
+3.51.0-rc1 (2020-10-13)
+
+- Refactored how the queue stores transfer flags
+- Refactored internals to be more modular
+- Linux: Disable receive buffer tuning if it results in unexpected consequences
+- Distinguish between Cancel and No in the file changed dialog
+- Small fixes to changing or disabling a master password
+
+3.50.0 (2020-08-27)
+
+- Minor fixes to Tardigrade integration
+
+3.50.0-rc1 (2020-08-21)
+
++ Update Storj/Tardigrade integration, now based on the uplink-c library
+- Fix layout issues in the Site Manager if switching protocol
+- Restored natural sort option for file list sorting
+
+3.49.1 (2020-07-15)
+
+- Fixed selection changes not being reflected in the Site Manager in some circumstances
+
+3.49.0 (2020-07-14)
+
+- Fixed retrying initial connection attempts
+
+3.49.0-rc1 (2020-07-07)
+
+- MSW: Tab bar icons now scale on high-DPI displays
+- The sizing and spacing of several dialogs has been improved on high-DPI displays
+- MSW: Fix visual glitches when changing the selected site in the Site Manager
+- When creating a new tab, the pane sizes are now inherited from the previous tab.
+- macOS: Additional fixes for handling Cmd+V, Cmd+C and Cmd+X in text input controls
+- Refactored internal settings and option handling
+
+3.48.1 (2020-05-19)
+
+- If FileZilla is configured to restore open tabs on startup, the directory trees no longer shrink in size
+
+3.48.1-rc1 (2020-05-12)
+
+! MSW: The settings directory is now initially created with tight permissions restricted to the user's account. Previously the directory could have had inherited too wide permissions if a custom location outside the user's profile directory had been preconfigured.
++ Redesigned certificate dialog
++ During directory comparison and comparative search, Ctrl+Shift+A can now be used to select only the highlighted files
+- Fixed import of settings
+- Fixed local file editing if the option to track local file changes had been disabled
+- Fixes to storing associations
+
+3.48.0 (2020-04-28)
+
+! Custom associations for file extensions containing spaces were not saved correctly
+
+3.48.0-rc1 (2020-04-20)
+
++ Overhaul of file associations for editing files. The setting to inherit system associations has been removed. When first editing a type of file with no default editor set, a dialog is shown asking which editor to use. The system associatio, if it exists, is a choice in this dialog.
+- SFTP: Re-added support for AES-GCM which was accidentally removed in 3.46.1
+- Fixes for comparative search leaving the program in an inconsistent state when closing the dialog during an ongoing search
+- Building and running FileZilla now depends on libfilezilla &gt;= 0.20.0 (https://lib.filezilla-project.org/)
+</Setting>
+		<Setting name="Update Check Check Beta">0</Setting>
+		<Setting name="Show debug menu">0</Setting>
+		<Setting name="File exists action download">0</Setting>
+		<Setting name="File exists action upload">0</Setting>
+		<Setting name="Allow ascii resume">0</Setting>
+		<Setting name="Greeting version">3.47.2.1</Setting>
+		<Setting name="Greeting resources" />
+		<Setting name="Onetime Dialogs" />
+		<Setting name="Show Tree Local">0</Setting>
+		<Setting name="Show Tree Remote">0</Setting>
+		<Setting name="File Pane Layout">0</Setting>
+		<Setting name="File Pane Swap">0</Setting>
+		<Setting name="Filelist directory sort">0</Setting>
+		<Setting name="Filelist name sort">1</Setting>
+		<Setting name="Queue successful autoclear">0</Setting>
+		<Setting name="Queue column widths">180 60 180 80 60 150</Setting>
+		<Setting name="Local filelist colwidths">120 80 100 120</Setting>
+		<Setting name="Remote filelist colwidths">221 75 80 100 80 80</Setting>
+		<Setting name="Window position and size">0 716 329 1200 743 </Setting>
+		<Setting name="Splitter positions (v2)">97 -132 500000000 258 258 500000000</Setting>
+		<Setting name="Local filelist sortorder">0 0</Setting>
+		<Setting name="Remote filelist sortorder">0 0</Setting>
+		<Setting name="Time Format">0</Setting>
+		<Setting name="Date Format">0</Setting>
+		<Setting name="Show message log">1</Setting>
+		<Setting name="Show queue">0</Setting>
+		<Setting name="Default editor">2"/Applications/Visual Studio Code.app"</Setting>
+		<Setting name="Always use default editor">0</Setting>
+		<Setting name="Inherit system associations">1</Setting>
+		<Setting name="Custom file associations" />
+		<Setting name="Comparison mode">1</Setting>
+		<Setting name="Comparison threshold">1</Setting>
+		<Setting name="Site Manager position">0 794 481 918 441 </Setting>
+		<Setting name="Icon theme">default</Setting>
+		<Setting name="Icon scale">125</Setting>
+		<Setting name="Timestamp in message log">0</Setting>
+		<Setting name="Sitemanager last selected">0/Forge</Setting>
+		<Setting name="Local filelist shown columns">1111</Setting>
+		<Setting name="Remote filelist shown columns">111111</Setting>
+		<Setting name="Local filelist column order">0,1,2,3</Setting>
+		<Setting name="Remote filelist column order">0,1,2,3,4,5</Setting>
+		<Setting name="Filelist status bar">1</Setting>
+		<Setting name="Filter toggle state">0</Setting>
+		<Setting name="Show quickconnect bar">0</Setting>
+		<Setting name="Messagelog position">0</Setting>
+		<Setting name="File doubleclick action">0</Setting>
+		<Setting name="Dir doubleclick action">0</Setting>
+		<Setting name="Minimize to tray">0</Setting>
+		<Setting name="Search column widths" />
+		<Setting name="Search column shown" />
+		<Setting name="Search column order" />
+		<Setting name="Search window size" />
+		<Setting name="Comparison hide identical">0</Setting>
+		<Setting name="Search sort order" />
+		<Setting name="Edit track local">1</Setting>
+		<Setting name="Prevent idle sleep">1</Setting>
+		<Setting name="Filteredit window size" />
+		<Setting name="Enable invalid char filter">1</Setting>
+		<Setting name="Invalid char replace">_</Setting>
+		<Setting name="Already connected choice">0</Setting>
+		<Setting name="Edit status dialog size" />
+		<Setting name="Display current speed">0</Setting>
+		<Setting name="Toolbar hidden">1</Setting>
+		<Setting name="Strip VMS revisions">0</Setting>
+		<Setting name="Startup action">0</Setting>
+		<Setting name="Prompt password save">0</Setting>
+		<Setting name="Persistent Choices">1</Setting>
+		<Setting name="Queue completion action">1</Setting>
+		<Setting name="Queue completion command" />
+		<Setting name="Drag and Drop disabled">0</Setting>
+		<Setting name="Disable update footer">0</Setting>
+		<Setting name="Master password encryptor" />
+		<Setting name="Config Location">/Users/miguelarias/.config/filezilla/</Setting>
+		<Setting name="Kiosk mode">0</Setting>
+		<Setting name="Disable update check">0</Setting>
+		<Setting name="Cache directory" />
+		<Setting name="Tab data">
+			<Tabs>
+				<Tab selected="1">
+					<Host>67.205.142.2</Host>
+					<Port>22</Port>
+					<Protocol>1</Protocol>
+					<Type>0</Type>
+					<User>forge</User>
+					<Keyfile>/Users/miguelarias/.ssh/id_rsa</Keyfile>
+					<Logontype>5</Logontype>
+					<EncodingType>Auto</EncodingType>
+					<BypassProxy>0</BypassProxy>
+					<Name>Forge</Name>
+					<Site>0/Forge</Site>
+					<RemotePath>1 0 4 home 5 forge 14 onicedoors.com</RemotePath>
+					<LocalPath>/Users/miguelarias/code/sites/onicedoors/</LocalPath>
+				</Tab>
+			</Tabs>
+		</Setting>
+	</Settings>
+</FileZilla3>

@@ -1,0 +1,17 @@
+if has('gui_macvim')
+  " This removes the Cmd-P binding from 'Print':
+  macmenu &File.Print key=<nop>
+
+  " This removes the Cmd-W binding from closing a window.
+  macmenu &File.Close key=<nop>
+
+  set macligatures
+endif
+
+set showtabline=0 "dont show macvim tabs
+set foldcolumn=4 "padding left of linenumbers
+set guioptions+=! "show better colors on terminal commands
+set guifont=MonoLisa_Custom:h16
+set linespace=18 "line height
+
+so ~/.vim/vimrc

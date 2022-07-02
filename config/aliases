@@ -1,0 +1,90 @@
+# current vim editor...
+alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
+alias v="nvim"
+
+#---------- General aliases
+alias aliases="v ~/.config/aliases"
+alias code="cd ~/code"
+alias desk="cd ~/desktop"
+alias edithosts="sudo v /etc/hosts"
+alias copyssh="cat ~/.ssh/id_rsa.pub | pbcopy"
+alias lint="jlint; plint"
+alias ls="ls -G -la"
+alias l="ls -G -la"
+alias cl="clear"
+alias c="clear"
+alias 1mp="pbcopy < ~/code/resources/kwes/credentials/1pass/me/1pass.txt; clear"
+alias copy="pbcopy <"
+alias hidedesk="defaults write com.apple.finder CreateDesktop false; killall Finder"
+alias showdesk="defaults write com.apple.finder CreateDesktop true; killall Finder"
+alias tmuxkill="tmux kill-server"
+
+#---------- Config edits
+alias alaconfig="v ~/.config/alacritty/alacritty.yml"
+alias kittyconfig="v ~/.config/kitty/kitty.conf"
+alias sshconfig="v ~/.ssh/config"
+alias nvimconfig="v ~/.config/nvim"
+
+#---------- Git aliases
+alias gs="git status"
+alias gl="git log"
+alias gaa="git add ."
+alias gc="git commit -m"
+alias gps="git push"
+alias gpl="git pull"
+alias nahboi="git reset --hard && git clean -df"
+alias grsoft="git reset --soft HEAD~1"
+alias gb="git branch"
+alias gco="git checkout"
+alias gm="git merge"
+alias wip="gc 'wip'"
+
+#---------- NPM / Yarn
+alias watch="npm run watch"
+alias hot="npm run hot"
+alias prod="npm run prod"
+alias dev="npm run dev"
+alias staging="npm run staging"
+alias jlint="npm run lint"
+alias upgradenpm="sudo npm i -g npm"
+alias upgradeyarn="npm install --global yarn"
+alias vite="npm init vite@latest"
+alias sailwatch="sail npm run watch"
+alias sailprod="sail npm run prod"
+alias saildev="sail npm run dev"
+
+#---------- Laravel aliases
+alias tinker="php artisan tinker"
+alias migrate="php artisan migrate"
+alias artisan="php artisan"
+alias dusk="clear; artisan dusk"
+alias testall="pest; artisan dusk;"
+alias freshseed="artisan migrate:fresh --seed"
+alias work="artisan queue:work --tries=3 --timeout=90"
+alias sail="./vendor/bin/sail"
+alias stoplocal="valet stop; brew services stop mysql"
+alias startlocal="valet start; brew services start mysql"
+
+#---------- PHP aliases
+alias serve="php -S localhost:8000"
+alias globalcomposer="v ~/.composer/composer.json"
+alias phpunit="vendor/bin/phpunit"
+alias pest="./vendor/bin/pest"
+alias upgradecomposer="composer self-update"
+alias plint="composer lint"
+alias kfproddbpass="aws rds generate-db-auth-token --hostname kwes.cyxnjo1yqylx.us-east-1.rds.amazonaws.com --port 3306 --region us-east-1 --username miguel"
+alias kfproddbformspass="aws rds generate-db-auth-token --hostname forms.cyxnjo1yqylx.us-east-1.rds.amazonaws.com --port 3306 --region us-east-1 --username miguel"
+alias kfstagdbpass="aws rds generate-db-auth-token --hostname staging-kwes-app.cyxnjo1yqylx.us-east-1.rds.amazonaws.com --port 3306 --region us-east-1 --username miguel"
+alias tableplus="export LIBMYSQL_ENABLE_CLEARTEXT_PLUGIN=1; open -a TablePlus"
+alias checkini="php --ini"
+
+#---------- Directories
+alias kwes="cd ~/code/sites/kwes"
+alias kwesforms="cd ~/code/sites/kwesforms; clear"
+alias docley="cd ~/code/sites/app.docley; clear"
+alias config="cd ~/.config"
+alias installers="cd ~/Installers; clear"
+
+# Things to remember
+# x=1; y=0; while [ $x -le 500 ]; do cp $y.json $x.json; $(( x++ )); $(( y++ )); done
+
