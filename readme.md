@@ -17,19 +17,19 @@
 - the silver searcher = brew install the_silver_searcher
 - tree sitter = brew install tree-sitter
 - firefox = brew install --cask firefox
-- docker desktop = use browser
 - composer = brew install composer
 - node/npm = brew install node
 - laravel installer = composer global require laravel/installer; add composer to home path = $HOME/.composer/vendor/bin
 - laravel valet = composer global require laravel/valet; valet install; cd ~/code/sites; valet park;
 - tableplus = brew install --cask tableplus
 - dbengin = brew install --cask dbngin
+- docker desktop = use browser
 
 #### Productivity
 - anydo = brew install --cask anydo
-- trello = app store
 - 1pass = brew install --cask 1password
 - gifox = brew install --cask gifox
+- trello = app store
 
 #### Workflow
 - rectangle = brew install --cask rectangle
