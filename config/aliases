@@ -24,7 +24,7 @@ alias alaconfig="v ~/.dotfiles/config/alacritty/alacritty.yml"
 alias kittyconfig="v ~/.dotfiles/config/kitty/kitty.conf"
 alias sshconfig="v ~/.ssh/config"
 alias nvimconfig="v ~/.dotfiles/config/nvim"
-alias startpageconfig="v ~/.dotfiles/config/startpage"
+alias startpageconfig="v ~/.dotfiles/startpage"
 alias gitconfig="v ~/.dotfiles/gitconfig"
 
 #---------- Git aliases

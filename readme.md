@@ -46,3 +46,11 @@
 - Gitconfig = ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 - Wallpapers = ln -s ~/.dotfiles/wallpapers ~/Pictures/Wallpapers
 - Config = ln -s ~/.dotfiles/config ~/.config
+
+### Customize firefox.
+- go to about:config
+- look for toolkit.legacyUserProfileCustomizations.stylesheets
+- make sure its set to true
+- navigate to ~/Library/Application Support/Firefox/Profiles
+- look for default release, for example: pgy1qc89.default-release-1656976481202
+- symlink our user chrome styles: ln -s ~/.dotfiles/firefox/chrome chrome
