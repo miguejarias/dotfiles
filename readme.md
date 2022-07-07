@@ -43,7 +43,6 @@
 - Tailwind = npm install -g @tailwindcss/language-server
 
 ### Symlinks
-- Gitconfig = ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 - Wallpapers = ln -s ~/.dotfiles/wallpapers ~/Pictures/Wallpapers
 - Config = ln -s ~/.dotfiles/config ~/.config
 
