@@ -49,8 +49,11 @@
 
 ### Customize firefox.
 - go to about:config
-- look for toolkit.legacyUserProfileCustomizations.stylesheets
-- make sure its set to true
+- make sure the following settings are set to true
+    - toolkit.legacyUserProfileCustomizations.stylesheets
+    - layers.acceleration.force-enabled
+    - gfx.webrender.all
+    - svg.context-properties.content.enabled
 - navigate to ~/Library/Application Support/Firefox/Profiles
 - look for default release, for example: pgy1qc89.default-release-1656976481202
 - symlink our user chrome styles: ln -s ~/.dotfiles/firefox/chrome chrome
