@@ -123,7 +123,7 @@ map('n', '<leader>kw', ':e ~/code/sites/kwes<CR>:cd %:p:h<CR>')
 vim.cmd [[
     augroup autosourcing
         autocmd!
-        autocmd BufWritePost ~/.config/nvim/init.lua luafile %
+        autocmd BufWritePost ~/dotfiles/config/nvim/init.lua luafile %
     augroup END
 
     autocmd TermOpen * setlocal nonumber norelativenumber
@@ -134,7 +134,7 @@ vim.cmd [[
     augroup end
 
     autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js,*.vue EslintFixAll
-    autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js,*.vue,*.css,*.json Prettier
+    autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js,*.vue,*.css,*.json,*.html Prettier
     autocmd User TelescopePreviewerLoaded setlocal wrap
     autocmd BufWritePost * GitGutter
 ]]

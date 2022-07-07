@@ -26,6 +26,7 @@ alias sshconfig="v ~/.ssh/config"
 alias nvimconfig="v ~/.dotfiles/config/nvim"
 alias startpageconfig="v ~/.dotfiles/startpage"
 alias gitconfig="v ~/.dotfiles/gitconfig"
+alias firefoxstyleconfig="v ~/.dotfiles/firefox/chrome"
 
 #---------- Git aliases
 alias gs="git status"

@@ -54,6 +54,7 @@ return require('packer').startup(function ()
         config = function ()
             local alpha = require'alpha'
             local dashboard = require'alpha.themes.dashboard'
+
             dashboard.section.header.val = {
                 [[                                                 ]],
                 [[                                                 ]],
@@ -67,6 +68,7 @@ return require('packer').startup(function ()
                 [[\ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
                 [[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
             }
+
             dashboard.section.buttons.val = {
                 dashboard.button( "e", "New file" , ':ene <BAR> startinsert <CR>'),
                 dashboard.button( "ctrl+p", "Find files" , ':Telescope find_files<CR>'),
@@ -74,10 +76,6 @@ return require('packer').startup(function ()
                 dashboard.button( "ctrl+f", "Find anything" , ':Telescope live_grep<CR>'),
                 dashboard.button( "q", "Quit NVIM" , ":qa<CR>"),
             }
-            local handle = io.popen('fortune')
-            local fortune = handle:read("*a")
-            handle:close()
-            dashboard.section.footer.val = fortune
 
             dashboard.config.opts.noautocmd = true
 
