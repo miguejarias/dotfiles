@@ -3,7 +3,7 @@ alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
 alias v="nvim"
 
 #---------- General aliases
-alias aliases="v ~/.config/aliases"
+alias aliases="v ~/.dotfiles/aliases"
 alias code="cd ~/code"
 alias desk="cd ~/desktop"
 alias edithosts="sudo v /etc/hosts"

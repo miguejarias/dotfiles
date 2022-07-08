@@ -4,7 +4,7 @@ export PATH=$HOME/bin:/usr/local/bin:/Applications/MacVim.app/Contents/bin:$HOME
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/miguelarias/.oh-my-zsh"
 
-source $HOME/.config/alias.sh
+source $HOME/.dotfiles/alias.sh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -102,7 +102,7 @@ fi
 # For a full list of active aliases, run `alias`.
 
 # Aliases
-source ~/.config/aliases
+source ~/.dotfiles/aliases
 alias zshconfig="v ~/.zshrc"
 alias ohmyzsh="v ~/.oh-my-zsh"
 
