@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 6,
+      "subtext" : {
+        "size" : 11,
+        "colorSelected" : "#6F7C88FF",
+        "font" : "System",
+        "color" : "#6F7C88FF"
+      },
+      "shortcut" : {
+        "size" : 14,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System",
+        "color" : "#91B0CBFF"
+      },
+      "backgroundSelected" : "#0E1826E4",
+      "text" : {
+        "size" : 14,
+        "colorSelected" : "#DFE3EDFF",
+        "font" : "System",
+        "color" : "#DFE3EDE5"
+      },
+      "iconPaddingHorizontal" : 19,
+      "roundness" : 0,
+      "paddingVertical" : 10,
+      "iconSize" : 28
+    },
+    "search" : {
+      "backgroundSelected" : "#142033E4",
+      "paddingHorizontal" : 20,
+      "spacing" : 8,
+      "text" : {
+        "size" : 21,
+        "colorSelected" : "#DFE3EDFF",
+        "font" : "System",
+        "color" : "#DFE3EDFF"
+      },
+      "background" : "#142033FF",
+      "roundness" : 0,
+      "paddingVertical" : 9
+    },
+    "window" : {
+      "color" : "#142033FF",
+      "paddingHorizontal" : 0,
+      "width" : 559,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 0,
+      "roundness" : 8,
+      "paddingVertical" : 8
+    },
+    "credit" : "Miguel J Arias",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#91B0CBFF",
+      "thickness" : 2
+    },
+    "name" : "Carbon"
+  }
+}
