@@ -1,0 +1,5 @@
+# script to use kitty as terminal
+
+on alfred_script(q)
+	do shell script "cd ~;/Applications/kitty.app/Contents/MacOS/kitty /usr/local/bin/fish -c \"source ~/.config/fish/config.fish && " & q & ";/usr/local/bin/fish\""
+end alfred_script
