@@ -61,7 +61,7 @@ map('v', '<leader>c', ':Comment<CR>')
 map('i', '<leader>c', '<Esc>:Comment<CR>')
 
 -- Telescope find files
-map('n', '<C-p>', ':Telescope find_files<CR>')
+map('n', '<C-p>', ':Telescope find_files hidden=true<CR>')
 map('n', '<C-f>', ':Telescope live_grep<CR>')
 -- map('n', '<C-r>', ':lua require("telescope.builtin").lsp_document_symbols{}<CR>')
 map('n', '<C-r>', ':lua require("telescope.builtin").treesitter{}<CR>')
