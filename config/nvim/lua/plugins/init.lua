@@ -1,9 +1,8 @@
 require('plugins.lualine')
 require('plugins.nightfox')
 require('plugins.treesitter')
-require('plugins.lsp')
 require('plugins.nvim-autopairs')
-require('plugins.prettier')
+require('plugins.coc')
 
 return require('packer').startup(function ()
     -- plugin manager
@@ -21,26 +20,24 @@ return require('packer').startup(function ()
     use 'nvim-lualine/lualine.nvim' -- status line
     use 'kyazdani42/nvim-web-devicons' -- nice icons
     use 'skwp/greplace.vim' -- search and replace
-    use 'jwalton512/vim-blade' -- blade highlighting
     use 'gpanders/editorconfig.nvim' -- editorconfig
     use 'windwp/nvim-autopairs' -- autopairs for characters.
-    use 'windwp/nvim-ts-autotag' -- close htmlt tags.
     use 'airblade/vim-gitgutter' -- git functionality on gutter
 
-    -- LSP Stuff
-    use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
-    use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
-    use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
-    use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
-    use 'L3MON4D3/LuaSnip' -- Snippets plugin
-    use('jose-elias-alvarez/null-ls.nvim') -- formatting for lsp
-    use('MunifTanjim/prettier.nvim') -- prettier
+    use {'neoclide/coc.nvim', branch = 'release'} -- intellesense.
 
     -- fzf file finder like ctrl+p
     use {
         'nvim-telescope/telescope.nvim',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
+    use 'fannheyward/telescope-coc.nvim'
+    require("telescope").setup({
+        extensions = {
+            coc = { theme = 'ivy' }
+        },
+    })
+    require('telescope').load_extension('coc')
 
     -- better syntax highlighting
     use {

@@ -66,8 +66,8 @@ map('n', '<C-f>', ':Telescope live_grep<CR>')
 -- map('n', '<C-r>', ':lua require("telescope.builtin").lsp_document_symbols{}<CR>')
 map('n', '<C-r>', ':lua require("telescope.builtin").treesitter{}<CR>')
 map('n', '<C-e>', ':lua require("telescope.builtin").oldfiles{}<CR>')
-map('n', 'gr', ':lua require("telescope.builtin").lsp_references{}<CR><Esc>')
-map('n', 'gd', ':lua require("telescope.builtin").lsp_definitions{}<CR><Esc>')
+map('n', 'gr', ':Telescope coc references<CR><Esc>')
+map('n', 'gd', ':Telescope coc definitions<CR><Esc>')
 
 -- Quick search and replace
 map('n', '<C-s>', ':Gsearch<CR>')
@@ -133,8 +133,6 @@ vim.cmd [[
         autocmd CmdlineLeave : echo ''
     augroup end
 
-    autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js,*.vue EslintFixAll
-    autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js,*.vue,*.css,*.json,*.html Prettier
     autocmd User TelescopePreviewerLoaded setlocal wrap
     autocmd BufWritePost * GitGutter
 ]]

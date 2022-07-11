@@ -8,5 +8,5 @@ vim.cmd [[
     hi EndOfBuffer guibg=bg
     hi EndOfBuffer guifg=bg guibg=bg
     "hi linenr guifg=#60728a
-    hi VertSplit guibg=#bg guifg=#3b4252
+    " hi VertSplit guibg=#bg guifg=#3b4252
 ]]
