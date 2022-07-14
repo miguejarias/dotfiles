@@ -66,8 +66,9 @@ map('n', '<C-f>', ':Telescope live_grep<CR>')
 -- map('n', '<C-r>', ':lua require("telescope.builtin").lsp_document_symbols{}<CR>')
 map('n', '<C-r>', ':lua require("telescope.builtin").treesitter{}<CR>')
 map('n', '<C-e>', ':lua require("telescope.builtin").oldfiles{}<CR>')
-map('n', 'gr', ':Telescope coc references<CR><Esc>')
-map('n', 'gd', ':Telescope coc definitions<CR><Esc>')
+map('n', 'gr', ':Telescope coc references<CR>')
+map('n', 'gd', ':Telescope coc definitions<CR>')
+map('n', 'td', ':TodoTelescope<CR>')
 
 -- Quick search and replace
 map('n', '<C-s>', ':Gsearch<CR>')

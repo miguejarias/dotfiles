@@ -3,6 +3,8 @@ require('plugins.nightfox')
 require('plugins.treesitter')
 require('plugins.nvim-autopairs')
 require('plugins.coc')
+require('plugins.telescope')
+require('plugins.todo-comments')
 
 return require('packer').startup(function ()
     -- plugin manager
@@ -23,25 +25,16 @@ return require('packer').startup(function ()
     use 'gpanders/editorconfig.nvim' -- editorconfig
     use 'windwp/nvim-autopairs' -- autopairs for characters.
     use 'airblade/vim-gitgutter' -- git functionality on gutter
-
+    use 'folke/todo-comments.nvim' -- TODO comments
     use {'neoclide/coc.nvim', branch = 'release'} -- intellesense.
 
     -- fzf file finder like ctrl+p
-    use {
-        'nvim-telescope/telescope.nvim',
+    use {'nvim-telescope/telescope.nvim',
         requires = { {'nvim-lua/plenary.nvim'} }
-    }
-    use 'fannheyward/telescope-coc.nvim'
-    require("telescope").setup({
-        extensions = {
-            coc = { theme = 'ivy' }
-        },
-    })
-    require('telescope').load_extension('coc')
+    } use 'fannheyward/telescope-coc.nvim'
 
     -- better syntax highlighting
-    use {
-        'nvim-treesitter/nvim-treesitter',
+    use {'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
 
