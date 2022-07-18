@@ -1,11 +1,3 @@
-require('plugins.lualine')
-require('plugins.nightfox')
-require('plugins.treesitter')
-require('plugins.nvim-autopairs')
-require('plugins.coc')
-require('plugins.telescope')
-require('plugins.todo-comments')
-
 return require('packer').startup(function ()
     -- plugin manager
     use 'wbthomason/packer.nvim'
