@@ -10,8 +10,8 @@ if status is-interactive
 end
 
 # Pure - https://github.com/pure-fish/pure
-set fish_function_path /Users/miguelarias/.config/fish/functions/theme-pure/functions/ $fish_function_path
-source /Users/miguelarias/.config/fish/functions/theme-pure/conf.d/pure.fish
+set fish_function_path $HOME/.config/fish/functions/theme-pure/functions/ $fish_function_path
+source $HOME/.config/fish/functions/theme-pure/conf.d/pure.fish
 
 # Pure prompt theme configurations
 set pure_symbol_prompt "❯❯❯"

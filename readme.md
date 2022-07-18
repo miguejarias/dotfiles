@@ -35,8 +35,6 @@
 - brew install fish
 - add /usr/local/bin/fish to /etc/shells at the bottom
 - run "chsh -s /usr/local/bin/fish" to make fish default shell
-- download pure fish installer = curl git.io/pure-fish --output /tmp/pure_installer.fish --location --silent
-- install pure fish = source /tmp/pure_installer.fish; and install_pure
 
 #### Productivity
 
