@@ -52,6 +52,7 @@
 
 - Wallpapers = ln -s ~/.dotfiles/wallpapers ~/Pictures/Wallpapers
 - Config = ln -s ~/.dotfiles/config ~/.config
+- ZSH = ln -s ~/.config/zsh/zshrc ~/.zshrc
 
 ### Customize firefox.
 
