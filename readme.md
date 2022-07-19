@@ -15,6 +15,7 @@
 - neovim = brew install neovim
 - vim = brew install vim
 - php = brew install php
+- mysql = brew install mysql | brew services restart mysql
 - python = brew install python
 - rust = brew install rust
 - the silver searcher = brew install the_silver_searcher
