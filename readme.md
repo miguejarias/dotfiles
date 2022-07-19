@@ -11,7 +11,7 @@
 - kitty terminal = brew install --cask kitty
 - fish shell = brew install fish
 - fisher (fish plugin manager) = curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-- pure-fish for prompt theme = fisher install pure-fish/pure
+- pure-fish for prompt theme = https://github.com/pure-fish/pure
 - neovim = brew install neovim
 - vim = brew install vim
 - php = brew install php
@@ -27,6 +27,14 @@
 - tableplus = brew install --cask tableplus
 - dbengin = brew install --cask dbngin
 - docker desktop = use browser
+
+#### Setup packer
+- https://github.com/wbthomason/packer.nvim#quickstart
+
+#### Setup Fish
+- brew install fish
+- add /usr/local/bin/fish to /etc/shells at the bottom
+- run "chsh -s /usr/local/bin/fish" to make fish default shell
 
 #### Productivity
 
@@ -52,6 +60,7 @@
 
 - Wallpapers = ln -s ~/.dotfiles/wallpapers ~/Pictures/Wallpapers
 - Config = ln -s ~/.dotfiles/config ~/.config
+- ZSH = ln -s ~/.config/zsh/zshrc ~/.zshrc
 
 ### Customize firefox.
 
