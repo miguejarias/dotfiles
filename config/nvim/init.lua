@@ -1,4 +1,4 @@
 require('mappings')
 require('plugins')
-require('settings')
 require('colors')
+require('settings')

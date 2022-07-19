@@ -18,6 +18,7 @@ alias copy="pbcopy <"
 alias hidedesk="defaults write com.apple.finder CreateDesktop false; killall Finder"
 alias showdesk="defaults write com.apple.finder CreateDesktop true; killall Finder"
 alias tmuxkill="tmux kill-server"
+alias kittyupgrade="curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin"
 
 #---------- Config edits
 alias alaconfig="v ~/.dotfiles/config/alacritty/alacritty.yml"
