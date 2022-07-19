@@ -6,7 +6,7 @@ require('plugins.lualine')
 require('plugins.nightfox')
 require('plugins.treesitter')
 require('plugins.nvim-autopairs')
-require('plugins.coc')
+require('plugins.coc-settings')
 require('plugins.telescope')
 require('plugins.todo-comments')
 
