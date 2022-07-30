@@ -1,5 +1,5 @@
 body {
-  background-color: #1d2a3e;
+  background-color: #16202f;
   margin: 0px;
   font-family: "MonoLisa Custom";
 }
@@ -15,13 +15,13 @@ body {
 
 #clock {
   font-size: 4rem;
-  color: #dfe4ed;
+  color: #72a7a6;
   margin-bottom: 0.25em;
 }
 
 .weather-container {
   width: 30%;
-  background-color: #0e1826;
+  background-color: #111924;
   padding: 1em;
   border-radius: 6px;
   font-size: 1.2rem;
@@ -33,7 +33,7 @@ body {
 }
 
 .tagline {
-  color: #6f7c88;
+  color: #5c6975;
   margin-top: 30px;
   font-style: italic;
 }

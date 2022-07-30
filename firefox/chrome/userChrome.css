@@ -39,7 +39,7 @@
   /* Comment the color theme you don't want to use */
 
   /* Dark Theme Colors */
-  --window-colour: #152133;
+  --window-colour: #16202f;
   --secondary-colour: #0e1826;
   --inverted-colour: #fafafc;
 
@@ -86,10 +86,10 @@
   --container-tabs-indicator-margin: 0px;
 }
 
-* {
-  /* font-family: "MonoLisa Custom"; */
-  /* color: #dfe4ed; */
-}
+/* * { */
+/*   font-family: "MonoLisa Custom"; */
+/*   color: #dfe4ed; */
+/* } */
 
 /*---+---+---+---+---+---+---+
      | B | U | T | T | O | N | S |
