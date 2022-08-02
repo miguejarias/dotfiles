@@ -96,7 +96,7 @@ nmap <C-s> :Gsearch<CR>
 nmap <leader>q :bd<CR>
 nmap <leader>s :w<CR>
 
-"imap <D-w> <Esc>:bd<CR>
+" imap <D-w> <Esc>:bd<CR>
 
 "Comment and uncomment stuff with cmd+/ on macvim
 nmap <leader>c gcc
@@ -156,5 +156,4 @@ set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
 "-------------------- Notes
-"
 "- close all buffers with %bd and use %bd! to close without saving.

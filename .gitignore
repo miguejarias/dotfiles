@@ -1,0 +1,7 @@
+config/valet/
+config/psysh/
+config/coc/
+config/configstore
+config/karabiner/
+config/fish/fish_variables
+config/nvim/plugin/packer_compiled.lua
