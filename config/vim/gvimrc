@@ -9,8 +9,8 @@ if has('gui_macvim')
 endif
 
 set showtabline=0 "dont show macvim tabs
-set foldcolumn=4 "padding left of linenumbers
-set guioptions+=! "show better colors on terminal commands
+set foldcolumn=2 "padding left of linenumbers
+set guioptions=
 set guifont=MonoLisa_Custom:h16
 set linespace=18 "line height
 
