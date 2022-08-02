@@ -8,8 +8,8 @@ mkdir -p ~/code/sites
 ln -s ~/.dotfiles/config ~/.config
 ln -s ~/.dotfiles/wallpapers ~/Pictures/Wallpapers
 ln -s ~/.dotfiles/startpage ~/code/sites/startpage
-ln -s ~/config/vim ~/.vim
-ln -s ~/config/vim/vimrc .ideavimrc
+ln -s ~/.config/vim ~/.vim
+ln -s ~/.config/vim/vimrc .ideavimrc
 ```
 
 ### Install Homebrew
