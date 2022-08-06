@@ -23,7 +23,7 @@ set scrolloff=8 "scroll offset when scrolling down.
 set splitbelow "horizontal split always splits below
 set splitright "vertical split always split to the right
 set cmdheight=1
-set guifont=MonoLisa_Custom:h15
+set guifont=MonoLisa_Custom:h15.5
 set linespace=16 "line height
 set laststatus=0 ruler
 set backspace=indent,eol,start
