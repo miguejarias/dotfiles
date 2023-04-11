@@ -60,10 +60,50 @@
 		<Setting name="Concurrent upload limit">0</Setting>
 		<Setting name="Update Check">1</Setting>
 		<Setting name="Update Check Interval">7</Setting>
-		<Setting name="Last automatic update check">2022-02-16 02:37:39</Setting>
+		<Setting name="Last automatic update check">2023-01-18 18:16:44</Setting>
 		<Setting name="Last automatic update version">3.47.2.1</Setting>
-		<Setting name="Update Check New Version">nightly 2022-02-15 https://filezilla-project.org/nightlies/2022-02-15/x86_64-apple-darwin18.2.0/FileZilla3.app.tar.bz2 15013525 sha512 c27f24cf07a776c3df6f2f6336cb312a587e6898221d9d012ae02f0162fc46635cf7b3b855e777b3febc408292bfc34f647ab5db396dbaedd34b2a0ec94be55b sig:rbZx61uN+Pfn+ceUdc20JvP9UbInhjzHu0qMEIlSIMvttRYeTqWMyigBxrfpIjKuzKmlMMekk16TFXrD0nnWAQ
-release 3.57.0 https://dl1.cdn.filezilla-project.org/FileZilla_3.57.0_macosx-x86.app.tar.bz2 14675478 sha512 010b0342eb569ef42714a89ee6e6d2fa88e216d89e310d8e2d236e56291b5a51662168201cf5314c55f2a73a4961e9a724b2ca2fee3f7bccf821852cdf9b9997 sig:9QWgnZ0YJPdEyHX7hnHVeUOgIdek+wjvaeIQVS/Tk2xqVEE7ZmQmsz0wGQiCjuOxzNj3CQmSeixpbeIdyaPMAg
+		<Setting name="Update Check New Version">nightly 2023-01-18 https://filezilla-project.org/nightlies/2023-01-18/x86_64-apple-darwin18.2.0/FileZilla3.app.tar.bz2 15485042 sha512 7eee71d9a04aa28258fafeb1bbd66534289780243b6bb0ecfd44d534162beed7d2d2f057ddb6fefdcdea1ce1308600fd1efc3fa5064cbfdaf9e92d7418b89bb2 sig:GmEHJPMXnHk28rx6j7xUA4jF/eWmG6j/hD5s2RnDGvEo2GzT439ArcwpRDXN5FfCjEDzeM6iIipFcpsMq8FHBw
+release 3.60.2 https://dl4.cdn.filezilla-project.org/FileZilla_3.60.2_macosx-x86.app.tar.bz2 14723530 sha512 f0e178539068378d503a570faa7ec8283251687ec2744d5eb247c55183eb8e88c541dd82cdb9ea0138389ba98ee27251ba2db4fec2a77bfd75e5a8b6cba13570 sig:zpVWcZM/8jeMwr/hQMdarnsSFNJ16EV7S6If+mhHhqfw+/rq2MEeTcLk5hSMXvTq6CreGG+7hs2cXBC3XoTcAg
+
+3.60.2 (2022-07-22)
+
+- Updated to libfilezilla 0.38.1 to address an issue with child process termination resulting in freezes
+
+3.60.1 (2022-06-01)
+
+- Fixed a regression drag-moving local files
+
+3.60.0 (2022-05-27)
+
+- SFTP: Fixed error handling if reading from child process fails
+- Fixed transfers following recursive operations not starting if the connection limit has been set to 1 in the Site Manager
+
+3.60.0-rc1 (2022-05-19)
+
++ macOS: Remote files can now be dragged into Finder
+- Fixed file change detection when editing files
+
+3.59.0 (2022-04-08)
+
+- Windows binaries: Updated zlib, used purely to cache re-scaled versions of icons shipped with FileZilla, to 1.2.12
+- Updated to libfilezilla 0.37.1
+
+3.59.0-rc1 (2022-04-01)
+
+- Updated to libfilezilla 0.37.0
+- Non-blocking communication with SFTP process
+- macOS, *nix: Fixed "All files" category in file picker dialogs
+
+3.58.0 (2022-02-11)
+
+- More detailed error messages if an XML file known to exist cannot be opened
+
+3.58.0-rc1 (2022-02-03)
+
++ Negotiate custom ALPN with FileZilla Server &gt;=1.3.0 during TLS handshake to save some roundtrips during connection establishment
++ Prepare FileZilla to support TOTP-based 2FA authentication on future FileZilla Server versions
+- Made downloading updates more robust if the network connection is unreliable
+- Updated to libfilezilla 0.36.0
 
 3.57.0 (2021-12-10)
 
@@ -270,7 +310,7 @@ release 3.57.0 https://dl1.cdn.filezilla-project.org/FileZilla_3.57.0_macosx-x86
 		<Setting name="Queue column widths">180 60 180 80 60 150</Setting>
 		<Setting name="Local filelist colwidths">120 80 100 120</Setting>
 		<Setting name="Remote filelist colwidths">221 75 80 100 80 80</Setting>
-		<Setting name="Window position and size">0 716 329 1200 743 </Setting>
+		<Setting name="Window position and size">0 790 535 1200 743 </Setting>
 		<Setting name="Splitter positions (v2)">97 -132 500000000 258 258 500000000</Setting>
 		<Setting name="Local filelist sortorder">0 0</Setting>
 		<Setting name="Remote filelist sortorder">0 0</Setting>
@@ -284,11 +324,11 @@ release 3.57.0 https://dl1.cdn.filezilla-project.org/FileZilla_3.57.0_macosx-x86
 		<Setting name="Custom file associations" />
 		<Setting name="Comparison mode">1</Setting>
 		<Setting name="Comparison threshold">1</Setting>
-		<Setting name="Site Manager position">0 794 481 918 441 </Setting>
+		<Setting name="Site Manager position">0 893 660 918 441 </Setting>
 		<Setting name="Icon theme">default</Setting>
 		<Setting name="Icon scale">125</Setting>
 		<Setting name="Timestamp in message log">0</Setting>
-		<Setting name="Sitemanager last selected">0/Forge</Setting>
+		<Setting name="Sitemanager last selected">0/4AM</Setting>
 		<Setting name="Local filelist shown columns">1111</Setting>
 		<Setting name="Remote filelist shown columns">111111</Setting>
 		<Setting name="Local filelist column order">0,1,2,3</Setting>
@@ -311,7 +351,7 @@ release 3.57.0 https://dl1.cdn.filezilla-project.org/FileZilla_3.57.0_macosx-x86
 		<Setting name="Filteredit window size" />
 		<Setting name="Enable invalid char filter">1</Setting>
 		<Setting name="Invalid char replace">_</Setting>
-		<Setting name="Already connected choice">0</Setting>
+		<Setting name="Already connected choice">1</Setting>
 		<Setting name="Edit status dialog size" />
 		<Setting name="Display current speed">0</Setting>
 		<Setting name="Toolbar hidden">1</Setting>
@@ -330,20 +370,20 @@ release 3.57.0 https://dl1.cdn.filezilla-project.org/FileZilla_3.57.0_macosx-x86
 		<Setting name="Cache directory" />
 		<Setting name="Tab data">
 			<Tabs>
-				<Tab selected="1">
-					<Host>67.205.142.2</Host>
+				<Tab connected="1" selected="1">
+					<Host>45.55.51.138</Host>
 					<Port>22</Port>
 					<Protocol>1</Protocol>
 					<Type>0</Type>
-					<User>forge</User>
-					<Keyfile>/Users/miguelarias/.ssh/id_rsa</Keyfile>
-					<Logontype>5</Logontype>
+					<User>root</User>
+					<Pass encoding="base64">ITRBbUAyMDIyJA==</Pass>
+					<Logontype>1</Logontype>
 					<EncodingType>Auto</EncodingType>
 					<BypassProxy>0</BypassProxy>
-					<Name>Forge</Name>
-					<Site>0/Forge</Site>
-					<RemotePath>1 0 4 home 5 forge 14 onicedoors.com</RemotePath>
-					<LocalPath>/Users/miguelarias/code/sites/onicedoors/</LocalPath>
+					<Name>4AM</Name>
+					<Site>0/4AM</Site>
+					<RemotePath>1 0 3 var 3 www 4 html</RemotePath>
+					<LocalPath>/Users/miguelarias/code/sites/4am/</LocalPath>
 				</Tab>
 			</Tabs>
 		</Setting>

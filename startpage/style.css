@@ -1,7 +1,7 @@
 body {
-  background-color: #16202f;
+  background-color: #fff;
   margin: 0px;
-  font-family: "MonoLisa Custom";
+  font-family: "Mononoki Nerd Font Mono";
 }
 
 .container {
@@ -16,17 +16,17 @@ body {
 #clock {
   margin-top: -70px;
   font-size: 4rem;
-  color: #72a7a6;
+  color: #ab9ee6;
   margin-bottom: 0.25em;
 }
 
 .weather-container {
   width: 30%;
-  background-color: #111924;
+  background-color: #f2f5f8;
   padding: 1em;
   border-radius: 6px;
   font-size: 1.2rem;
-  color: #dfe4ed;
+  color: #4a525a;
   text-align: center;
 }
 .inline {
@@ -34,9 +34,9 @@ body {
 }
 
 .tagline {
-  color: #5c6975;
+  color: #93a7ba;
   margin-top: 30px;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .bookmark-container {

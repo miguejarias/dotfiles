@@ -1,6 +1,6 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
-: Fonts {{{
+#: Fonts {{{
 
 #: kitty has very powerful font management. You can configure
 #: individual font faces and even specify special fonts for particular
@@ -9,7 +9,7 @@
 font_family      MonoLisa Custom Regular
 bold_font        MonoLisa Custom Medium
 italic_font      MonoLisa Custom Regular Italic
-bold_italic_font MonoLisa Custom Medium Italic
+bold_italic_font JetBrains Mono Regular Italic
 
 #: You can specify different fonts for the bold/italic/bold-italic
 #: variants. To get a full list of supported fonts use the `kitty
@@ -24,7 +24,7 @@ bold_italic_font MonoLisa Custom Medium Italic
 #:     italic_font      Operator Mono Book Italic
 #:     bold_italic_font Operator Mono Medium Italic
 
-font_size 15.5
+font_size 15
 
 #: Font size (in pts)
 
@@ -1145,7 +1145,7 @@ tab_bar_style powerline
 #: background processes still using the terminal can fail silently
 #: because their stdout/stderr/stdin no longer work.
 
-# allow_remote_control no
+allow_remote_control yes
 
 #: Allow other programs to control kitty. If you turn this on, other
 #: programs can control all aspects of kitty, including sending text
@@ -1427,7 +1427,7 @@ macos_show_window_title_in none
 #: mouse cursor invisible on dual GPU machines. Changing this option
 #: by reloading the config is not supported.
 
-macos_colorspace srgb
+macos_colorspace default
 
 #: The colorspace in which to interpret terminal colors. The default
 #: of srgb will cause colors to match those seen in web browsers. The
@@ -1845,7 +1845,7 @@ macos_colorspace srgb
 #: New tab
 
 # map kitty_mod+t new_tab
-# map cmd+t       new_tab
+map cmd+t       new_tab_with_cwd
 
 #: Close tab
 
@@ -2169,6 +2169,6 @@ macos_colorspace srgb
 
 
 # BEGIN_KITTY_THEME
-# Nord
+# Atom
 include current-theme.conf
 # END_KITTY_THEME
