@@ -5,11 +5,22 @@
 ```
 mkdir -p ~/code/sites
 
+touch ~/.hushlogin
+
+# See 1pass AWS MFA Setup
+# See https://github.com/asagage/aws-mfa-script
+touch ~/mfa.cfg
+touch ~/.aws/credentials
+
 ln -s ~/.dotfiles/config ~/.config
 ln -s ~/.dotfiles/wallpapers ~/Pictures/Wallpapers
 ln -s ~/.dotfiles/startpage ~/code/sites/startpage
 ln -s ~/.config/vim ~/.vim
 ln -s ~/.config/vim/vimrc .ideavimrc
+
+# Install aws CLI...
+# See https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+# Probably the installer for all users is the easiest.
 ```
 
 ### Install Homebrew
@@ -95,10 +106,13 @@ Once all packages are installed, run the following command to setup necessary Co
 :CocInstall coc-phpls coc-blade coc-css coc-docker coc-eslint coc-html coc-json coc-php-cs-fixer coc-prettier coc-tailwindcss coc-vetur coc-yaml
 ```
 
-#### Install PHPStorm
+#### Install your code IDE/editor
 
 ```
+# Install whichever one you will use
 brew install --cask phpstorm
+brew install --cask visual-studio-code
+brew install --cask sublime-text
 ```
 
 ### Setup local PHP environment
@@ -127,13 +141,15 @@ composer global require laravel/valet; valet install; cd ~/code/sites; valet par
 composer global require laravel/installer
 ```
 
-### Install and setup Firefox
+### Install and setup your browser
 
 ```
+# Install the browser you'll use
+brew install --cask google-chrome
 brew install --cask firefox
 ```
 
-#### Customize firefox.
+#### Customize firefox if using firefox.
 
 1. go to about:config
 2. make sure the following settings are set to true:
