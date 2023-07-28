@@ -12,7 +12,7 @@ return require('packer').startup(function ()
     use 'michaeldyrynda/carbon'
     use 'arcticicestudio/nord-vim'
     use 'flazz/vim-colorschemes'
-    use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
+    -- use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
 
     use({
     'NTBBloodbath/doom-one.nvim',
@@ -48,7 +48,7 @@ return require('packer').startup(function ()
 		vim.g.doom_one_plugin_lspsaga = false
 	end,
 	config = function()
-        vim.cmd("colorscheme github_dark")
+        vim.cmd("colorscheme hvid")
     end,
 })
 

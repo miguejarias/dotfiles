@@ -1,5 +1,8 @@
+set -x PHP_INI_SCAN_DIR "~/Library/Application Support/Herd/config/php/" $PHP_INI_SCAN_DIR
+
 # all our handy aliases to move supa fast
 source $HOME/.dotfiles/aliases
+source $HOME/.dotfiles/fish_scripts.sh
 
 # fish-specific aliases
 alias fishconfig 'v ~/.config/fish/config.fish'

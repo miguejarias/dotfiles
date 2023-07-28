@@ -20,6 +20,7 @@ alias hidedesk="defaults write com.apple.finder CreateDesktop false; killall Fin
 alias showdesk="defaults write com.apple.finder CreateDesktop true; killall Finder"
 alias tmuxkill="tmux kill-server"
 alias kittyupgrade="curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin"
+alias sl="subl ."
 
 #---------- Config edits
 alias alaconfig="v ~/.dotfiles/config/alacritty/alacritty.yml"
@@ -37,7 +38,7 @@ alias gaa="git add ."
 alias gc="git commit -m"
 alias gps="git push"
 alias gpl="git pull"
-alias nahboi="git reset --hard && git clean -df"
+alias nah="git reset --hard && git clean -df"
 alias grsoft="git reset --soft HEAD~1"
 alias gb="git branch"
 alias gco="git checkout"
@@ -97,4 +98,3 @@ alias installers="cd ~/Installers; clear"
 
 # Things to remember
 # x=1; y=0; while [ $x -le 500 ]; do cp $y.json $x.json; $(( x++ )); $(( y++ )); done
-
