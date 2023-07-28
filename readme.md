@@ -15,8 +15,9 @@ touch ~/.aws/credentials
 ln -s ~/.dotfiles/config ~/.config
 ln -s ~/.dotfiles/wallpapers ~/Pictures/Wallpapers
 ln -s ~/.dotfiles/startpage ~/code/sites/startpage
-ln -s ~/.config/vim ~/.vim
-ln -s ~/.config/vim/vimrc .ideavimrc
+ln -s ~/.dotfiles/config/vim ~/.vim
+ln -s ~/.dotfiles/config/vim/vimrc .ideavimrc
+ln -s ~/.dotfiles/config/warp ~/.warp
 
 # Install aws CLI...
 # See https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
