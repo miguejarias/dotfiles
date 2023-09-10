@@ -1,42 +1,32 @@
-local set = vim.opt
+vim.g.mapleader = " "  -- space key as our leader
 
-set.fileencoding = 'utf-8'
-set.exrc = true
-set.relativenumber = true
-set.nu = true
-set.hlsearch = false
-set.hidden = true
-set.errorbells = false
-set.hidden = true
-set.hidden = true
-set.tabstop = 4
-set.tabstop = 4 
-set.softtabstop = 4
-set.shiftwidth = 4
-set.expandtab = true
-set.smarttab = true
-set.smartindent = true
-set.wrap = false
-set.smartcase = true
-set.swapfile = false
-set.backup = false
-set.incsearch = true
-set.termguicolors = true
-set.scrolloff = 8 --scroll offset when scrolling down.
-set.splitbelow = true --horizontal split always splits below
-set.splitright = true --vertical split always split to the right
-set.cmdheight = 1
-set.guifont = 'MonoLisa_Custom:h16:w25:i25'
-set.linespace = 18 --line height
-set.laststatus=2
-set.backspace = 'indent,eol,start'
-set.mouse = 'a' -- use mouse in nvim
-set.shell = 'fish'
-set.grepprg = 'ag'
-set.signcolumn = 'yes'
+vim.opt.guicursor = "" -- fat insert cursor
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.opt.backspace = 'indent,eol,start'
 
-vim.cmd [[ 
-    let g:grep_cmd_opts = '--line-numbers --noheading'
-    let g:nord_italic_comments = 1
-    let g:nord_italic = 1
-]]
+vim.opt.smartindent = true
+vim.opt.wrap = false
+
+vim.opt.swapfile = false -- swap files are annoying
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true  -- undotree is great
+
+vim.opt.hlsearch = false -- remove highlight after search
+vim.opt.incsearch = true
+
+vim.opt.termguicolors = true -- better colors
+
+vim.opt.scrolloff = 8        -- 8 lines max when scrolling
+vim.opt.signcolumn = "yes"   -- like a gutter
+
+vim.opt.updatetime = 50
+
+-- vim.opt.colorcolumn = "80" -- softwrap line
+
+vim.opt.fillchars = 'eob: ' -- remove little squigglies at the end of files
+vim.opt.showmode = false    -- remove mode from default status line
+vim.opt.showtabline = 0     -- dont show any ugly tablines.

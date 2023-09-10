@@ -1,9 +1,9 @@
 if has('gui_macvim')
   " This removes the Cmd-P binding from 'Print':
-  macmenu &File.Print key=<nop>
+  " macmenu &File.Print key=<nop>
 
   " This removes the Cmd-W binding from closing a window.
-  macmenu &File.Close key=<nop>
+  " macmenu &File.Close key=<nop>
 
   set macligatures
 endif
