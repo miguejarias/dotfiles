@@ -12,7 +12,7 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false -- swap files are annoying
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undodir = os.getenv("HOME") .. "/.undodir"
 vim.opt.undofile = true  -- undotree is great
 
 vim.opt.hlsearch = false -- remove highlight after search
@@ -25,7 +25,7 @@ vim.opt.signcolumn = "yes"   -- like a gutter
 
 vim.opt.updatetime = 50
 
--- vim.opt.colorcolumn = "80" -- softwrap line
+-- vim.opt.colorcolumn = "80"  -- softwrap line
 
 vim.opt.fillchars = 'eob: ' -- remove little squigglies at the end of files
 vim.opt.showmode = false    -- remove mode from default status line

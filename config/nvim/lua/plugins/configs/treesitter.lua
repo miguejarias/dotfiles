@@ -1,17 +1,17 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { 
+  ensure_installed = {
       "bash",
       "fish",
       "dot",
       "dockerfile",
-      "php", 
-      "phpdoc", 
-      "javascript", 
+      "php",
+      "phpdoc",
+      "javascript",
       "vue",
       "json",
       "markdown",
-      "html", 
-      "css", 
+      "html",
+      "css",
       "lua",
       "yaml",
       "vim",

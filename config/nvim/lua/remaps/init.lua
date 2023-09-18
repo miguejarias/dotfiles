@@ -6,6 +6,8 @@ vim.keymap.set("n", "<leader>w", ":w<CR>")   -- save
 vim.keymap.set("n", "<leader>c", ":bd<CR>")  -- close buffer
 vim.keymap.set("n", "<leader>qq", ":q<CR>")  -- quit buffer
 vim.keymap.set("n", "<leader>qa", ":qa<CR>") -- quit all buffers
+vim.keymap.set("n", "`", ":bprev<CR>")       -- prev buffer
+vim.keymap.set("n", "1", ":bnext<CR>")       -- next buffer
 
 -- Commenting
 vim.keymap.set("n", "<leader>/", ":Comment<CR>")
@@ -26,8 +28,7 @@ vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("n", "<leader>pi", ":PackerSync<CR>")
 
 -- Better splits
-vim.keymap.set('n', '<leader>sp', ':sp<CR>')  -- horizontal split
-vim.keymap.set('n', '<leader>sv', ':vsp<CR>') -- vertical split
+vim.keymap.set('n', '<C-s>', ':vsp<CR>') -- vertical split
 
 -- Better split movements. S is shift
 vim.keymap.set('n', '<C-j>', '<C-W><C-J>') --shift+j down
