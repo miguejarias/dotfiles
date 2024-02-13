@@ -1,9 +1,9 @@
 # current vim editor...
-alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
 alias v="nvim"
 
 #---------- General aliases
 alias aliases="v ~/.dotfiles/aliases"
+alias so="source ~/.dotfiles/aliases"
 alias codes="cd ~/code"
 alias sites="cd ~/code/sites"
 alias desk="cd ~/desktop"
@@ -18,12 +18,13 @@ alias 1mp="pbcopy < ~/code/resources/kwes/credentials/1pass/me/1pass.txt; clear"
 alias copy="pbcopy <"
 alias hidedesk="defaults write com.apple.finder CreateDesktop false; killall Finder"
 alias showdesk="defaults write com.apple.finder CreateDesktop true; killall Finder"
-alias tmuxkill="tmux kill-server"
 alias kittyupgrade="curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin"
-alias sl="subl ."
+alias lg="lazygit"
+alias fzf="fzf --color=bg+:-1"
 
 #---------- Config edits
 alias alaconfig="v ~/.dotfiles/config/alacritty/alacritty.yml"
+alias tmuxconfig="v ~/.dotfiles/config/tmux/tmux.conf"
 alias kittyconfig="v ~/.dotfiles/config/kitty/kitty.conf"
 alias sshconfig="v ~/.ssh/config"
 alias nvimconfig="v ~/.dotfiles/config/nvim"
@@ -33,7 +34,7 @@ alias firefoxstyleconfig="v ~/.dotfiles/firefox/chrome"
 
 #---------- Git aliases
 alias gs="git status"
-alias gl="git log"
+alias gl="git log --oneline"
 alias gaa="git add ."
 alias gc="git commit -m"
 alias gps="git push"
@@ -87,15 +88,19 @@ alias kfproddbformspasshipaa="aws rds generate-db-auth-token --hostname forms-hi
 alias kfstagdbpass="aws rds generate-db-auth-token --hostname staging-kwes-app.cyxnjo1yqylx.us-east-1.rds.amazonaws.com --port 3306 --region us-east-1 --username miguel"
 alias tableplus="export LIBMYSQL_ENABLE_CLEARTEXT_PLUGIN=1; open -a TablePlus"
 alias checkini="php --ini"
+alias mysql="mysql --socket /tmp/mysql_3306.sock -uroot"
+
+#---------- Tmux
+alias tkill="tmux kill-server"
+alias ta="tmux attach"
+alias td="tmux detach"
+alias kf="tmux attach -t kwesforms"
+alias ar="tmux attach -t activityreport"
 
 #---------- Directories
 alias kwes="cd ~/code/sites/kwes"
-alias kwesforms="cd ~/code/sites/kwesforms; clear"
-alias docley="cd ~/code/sites/app.docley; clear"
-alias wag="cd ~/code/sites/wagnft; clear"
+alias kwesforms="cd ~/code/sites/kwesforms"
+alias activity="cd ~/code/sites/activityreport"
 alias config="cd ~/.dotfiles/config"
 alias dot="cd ~/.dotfiles"
 alias installers="cd ~/Installers; clear"
-
-# Things to remember
-# x=1; y=0; while [ $x -le 500 ]; do cp $y.json $x.json; $(( x++ )); $(( y++ )); done

@@ -77,12 +77,12 @@ nmap <S-L> <C-W><C-L>
 "shift+h left
 nmap <S-H> <C-W><C-H>
 
-nmap <C-p> :CtrlP<CR>
-nmap <D-p> :CtrlP<CR>
+" nmap <C-p> :CtrlP<CR>
+" nmap <D-p> :CtrlP<CR>
 " view tags like method names and variables in current file.
 nmap <C-r> :CtrlPBufTag<CR>
 " View most recent files like cmd+e on phpstorm
-nmap <C-e> :CtrlPMRUFiles<CR>
+" nmap <C-e> :CtrlPMRUFiles<CR>
 
 " search entire project like cmd+shift+f in vscode
 nmap <C-f> :Ag<space>

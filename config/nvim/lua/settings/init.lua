@@ -28,5 +28,6 @@ vim.opt.updatetime = 50
 -- vim.opt.colorcolumn = "80"  -- softwrap line
 
 vim.opt.fillchars = 'eob: ' -- remove little squigglies at the end of files
-vim.opt.showmode = false    -- remove mode from default status line
+-- vim.opt.showmode = false    -- remove mode from default status line
 vim.opt.showtabline = 0     -- dont show any ugly tablines.
+vim.opt.laststatus = 0      -- hide statusline

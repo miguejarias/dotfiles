@@ -1,8 +1,18 @@
-require('telescope').setup {
+local telescope = require('telescope')
+
+telescope.setup {
+  defaults = {
+    file_ignore_patterns = {
+      "node_modules",
+      "vendor",
+      ".git",
+    }
+  },
   pickers = {
     find_files = {
       theme = "dropdown",
       previewer = false,
+      hidden = true,
     },
     oldfiles = {
       theme = "dropdown",
@@ -17,6 +27,7 @@ require('telescope').setup {
   }
 }
 
+telescope.load_extension('fzf')
 local builtin = require('telescope.builtin')
 
 vim.keymap.set('n', '<leader>f', builtin.find_files)
