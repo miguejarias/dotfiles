@@ -12,8 +12,8 @@ local border = "#547998"
 require("tokyonight").setup {
   transparent = true,
   styles = {
-     sidebars = "transparent",
-     floats = "transparent",
+    sidebars = "transparent",
+    floats = "transparent",
   },
   style = 'night',
   on_colors = function(colors)

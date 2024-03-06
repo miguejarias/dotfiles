@@ -1,20 +1,20 @@
-require'nvim-treesitter.configs'.setup {
+require 'nvim-treesitter.configs'.setup {
   ensure_installed = {
-      "bash",
-      "fish",
-      "dot",
-      "dockerfile",
-      "php",
-      "phpdoc",
-      "javascript",
-      "vue",
-      "json",
-      "markdown",
-      "html",
-      "css",
-      "lua",
-      "yaml",
-      "vim",
+    "bash",
+    "fish",
+    "dot",
+    "dockerfile",
+    "php",
+    "phpdoc",
+    "javascript",
+    "vue",
+    "json",
+    "markdown",
+    "html",
+    "css",
+    "lua",
+    "yaml",
+    "vim",
   },
 
   autotag = {
@@ -31,4 +31,3 @@ require'nvim-treesitter.configs'.setup {
     enable = true
   }
 }
-
