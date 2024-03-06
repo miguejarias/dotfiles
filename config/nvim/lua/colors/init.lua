@@ -1,5 +1,5 @@
 local bg = "#011228"
-local bg_dark = "#011423"
+local bg_dark = "#0a0d34"
 local bg_highlight = "#143652"
 local bg_search = "#0A64AC"
 local bg_visual = "#275378"

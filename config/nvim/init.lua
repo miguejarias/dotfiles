@@ -15,5 +15,6 @@ require('plugins.configs.lazygit')
 require('plugins.configs.gitsigns')
 require('plugins.configs.toggleterm')
 require('plugins.configs.undotree')
+require('plugins.configs.dadbod')
 
 require('colors')

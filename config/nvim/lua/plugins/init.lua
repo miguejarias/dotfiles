@@ -25,6 +25,8 @@ return require('packer').startup(function(use)
   use 'akinsho/toggleterm.nvim'                                    -- integrated terminal
   use 'windwp/nvim-autopairs'                                      -- autopairs for characters.
   use 'stevearc/conform.nvim'                                      -- formatter
+  use 'tpope/vim-dadbod'                                           -- database interface
+  use 'kristijanhusak/vim-dadbod-ui'                               -- ui for dadbod db thing
 
   use {
     'VonHeikemen/lsp-zero.nvim', -- LSP and autocompletion support
