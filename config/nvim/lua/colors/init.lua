@@ -5,7 +5,7 @@ local bg_search = "#0A64AC"
 local bg_visual = "#275378"
 local fg = "#CBE0F0"
 local fg_dark = "#B4D0E9"
-local fg_gutter = "#627E97"
+local fg_gutter = "#3e4a86"
 local border = "#3e4a86"
 local comment = "#3e4a86"
 
