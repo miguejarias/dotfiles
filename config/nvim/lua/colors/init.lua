@@ -6,7 +6,10 @@ local bg_visual = "#275378"
 local fg = "#CBE0F0"
 local fg_dark = "#B4D0E9"
 local fg_gutter = "#627E97"
-local border = "#547998"
+local border = "#3e4a86"
+local comment = "#3e4a86"
+
+-- this is a comment
 
 
 require("tokyonight").setup {
@@ -32,6 +35,7 @@ require("tokyonight").setup {
     colors.fg_float = fg
     colors.fg_gutter = fg_gutter
     colors.fg_sidebar = fg_dark
+    colors.comment = comment
   end,
 }
 
