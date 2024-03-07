@@ -42,3 +42,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")                                    
 vim.keymap.set("n", "n", "nzzzv")                                                         -- keep search terms centered on next
 vim.keymap.set("n", "N", "Nzzzv")                                                         -- keep search terms centered on prev
 vim.keymap.set("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]) -- replace all instances of word you're on
+
+-- show or hide line numbers
+vim.keymap.set("n", "<leader>ns", ":bufdo set nu<CR>")
+vim.keymap.set("n", "<leader>nu", ":bufdo set nu!<CR>")
