@@ -31,3 +31,4 @@ vim.opt.fillchars = 'eob: ' -- remove little squigglies at the end of files
 -- vim.opt.showmode = false    -- remove mode from default status line
 vim.opt.showtabline = 0     -- dont show any ugly tablines.
 vim.opt.laststatus = 0      -- hide statusline
+vim.opt.cursorline = true   -- highlight current line
