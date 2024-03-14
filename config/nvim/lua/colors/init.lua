@@ -7,7 +7,7 @@ local fg = "#CBE0F0"
 local fg_dark = "#B4D0E9"
 local fg_gutter = "#3e4a86"
 local border = "#3e4a86"
-local comment = "#3e4a86"
+local comment = "#4b5797"
 
 -- this is a comment
 
